@@ -1,5 +1,5 @@
 export const JournalPage = () => {
   return (
-    <div>JournalPage</div>
+    <div>JournalPageuwu</div>
   )
 }
