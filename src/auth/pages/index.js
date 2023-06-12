@@ -1,2 +1,2 @@
-export *from './LoginPage.jsx';
-export *from './RegisterPage.jsx';
+export * from './LoginPage';
+export * from './RegisterPage';
