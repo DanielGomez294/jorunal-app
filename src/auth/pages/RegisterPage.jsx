@@ -13,6 +13,7 @@ export const RegisterPage = () => {
             <TextField label="Nombre completo"
              variant="outlined"
              type="text"
+             name='name'
              placeholder="Nombre completo" 
              fullWidth sx={{mb:2}}/>
           </Grid>
@@ -20,6 +21,7 @@ export const RegisterPage = () => {
             <TextField label="Correo electrónico"
              variant="outlined"
              type="email"
+             name='email'
              placeholder="correo@htp.com" 
              fullWidth sx={{mb:2}}/>
           </Grid>
@@ -27,6 +29,8 @@ export const RegisterPage = () => {
             <TextField label="contraseña"
              variant="outlined"
              type="password"
+             name='password'
+
              placeholder="Contraseña" 
              fullWidth sx={{mb:2}}/>
           </Grid>
