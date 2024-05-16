@@ -4,6 +4,7 @@ import { Button, Grid, Link, TextField, Typography } from "@mui/material"
 import { AuthLayout } from '../layout/AuthLayout'
 
 export const RegisterPage = () => {
+  
   return (
   
     <AuthLayout title='Crear cuenta'>

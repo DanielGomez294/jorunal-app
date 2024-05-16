@@ -1,9 +1,9 @@
 import { signInWithGoogle } from "../../firebase/providers";
-import { checkingCredentials } from "./authSlice";
+import { checkingCredentials, logout, login } from "./authSlice";
 
 export const checkingAuthentication = () => {
     return async (dispatch) => {
-        dispatch(checkingCredentials());
+        dispatch( checkingCredentials() );
         console.log("checking authentication");
     };
 }
@@ -11,10 +11,12 @@ export const checkingAuthentication = () => {
 
 export const startgoogleSignIn = () => {
     return async (dispatch) => {
-        dispatch(checkingCredentials());
+        dispatch( checkingCredentials() );
 
         const result = await signInWithGoogle();
+        if ( !result.ok ) return dispatch( logout( result.errorMessage ) )
 
-        console.log({result});
+            // delete result.ok;
+        dispatch( login( result ) );
     };
 }
