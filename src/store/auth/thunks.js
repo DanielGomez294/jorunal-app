@@ -14,5 +14,7 @@ export const startgoogleSignIn = () => {
         dispatch(checkingCredentials());
 
         const result = signInWithGoogle();
+
+        console.log(result);
     };
 }
