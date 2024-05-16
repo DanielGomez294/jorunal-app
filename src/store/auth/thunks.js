@@ -13,8 +13,8 @@ export const startgoogleSignIn = () => {
     return async (dispatch) => {
         dispatch(checkingCredentials());
 
-        const result = signInWithGoogle();
+        const result = await signInWithGoogle();
 
-        console.log(result);
+        console.log({result});
     };
 }
